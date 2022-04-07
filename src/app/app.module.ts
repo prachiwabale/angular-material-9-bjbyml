@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpErrorHandler } from './http-error-handler.service';
 import { TableComponent } from './table/table.component';
 import { BadgeComponent } from './badge/badge.component';
+import { InteractivetableComponent } from './interactivetable/interactivetable.component';
 
 const appRoutes: Routes = [{ path: '', component: AppComponent }];
 
@@ -28,7 +29,7 @@ const appRoutes: Routes = [{ path: '', component: AppComponent }];
       enableTracing: true,
     }),
   ],
-  declarations: [AppComponent, TableComponent,BadgeComponent],
+  declarations: [AppComponent, TableComponent,BadgeComponent,InteractivetableComponent],
   bootstrap: [AppComponent],
   exports: [RouterModule],
   providers: [HttpErrorHandler],

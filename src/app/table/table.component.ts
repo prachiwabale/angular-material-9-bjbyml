@@ -7,6 +7,7 @@ export interface PeriodicElement {
   effectivedate: string;
 }
 
+
 const ELEMENT_DATA: PeriodicElement[] = [
   {
     position: 1,
@@ -34,6 +35,13 @@ export class TableComponent implements OnInit {
     'effectivedate',
   ];
   dataSource = ELEMENT_DATA;
+  
+  displayedColumns1: string[] = [
+    'name',
+    'dateofbirth',
+    'effectivedate',
+    'gender',
+  ];
   constructor() {}
 
   ngOnInit() {}
