@@ -14,6 +14,7 @@ import { HttpErrorHandler } from './http-error-handler.service';
 import { TableComponent } from './table/table.component';
 import { BadgeComponent } from './badge/badge.component';
 import { InteractivetableComponent } from './interactivetable/interactivetable.component';
+import { Table1Component } from './table1/table1.component';
 
 const appRoutes: Routes = [{ path: '', component: AppComponent }];
 
@@ -29,7 +30,7 @@ const appRoutes: Routes = [{ path: '', component: AppComponent }];
       enableTracing: true,
     }),
   ],
-  declarations: [AppComponent, TableComponent,BadgeComponent,InteractivetableComponent],
+  declarations: [AppComponent, TableComponent,BadgeComponent,Table1Component,InteractivetableComponent],
   bootstrap: [AppComponent],
   exports: [RouterModule],
   providers: [HttpErrorHandler],
