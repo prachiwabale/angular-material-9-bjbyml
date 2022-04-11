@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 export interface TableElement {
+  emptydata1:string;
   position: number;
   name: string;
   dateofbirth: string;
@@ -9,12 +10,14 @@ export interface TableElement {
 
 const ELEMENT_DATA: TableElement[] = [
   {
+    emptydata1:'',
     position: 1,
     name: 'Vrunda',
     dateofbirth: '07-04-2022',
     effectivedate: '07-04-2022',
   },
   {
+    emptydata1:'',
     position: 2,
     name: 'Prachi',
     dateofbirth: '15-04-2022',
@@ -29,6 +32,7 @@ const ELEMENT_DATA: TableElement[] = [
 })
 export class Table1Component implements OnInit {
   displayedColumns: string[] = [
+    'emptydata1',
     'position',
     'name',
     'dateofbirth',
@@ -37,6 +41,7 @@ export class Table1Component implements OnInit {
   dataSource = ELEMENT_DATA;
 
   displayedColumns1: string[] = [
+    'emptydata1',
     'name',
     'dateofbirth',
     'effectivedate',
